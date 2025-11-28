@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8d4409; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-wrapper {
+    width: 1100px; 
+    max-width: 95%; 
+    background-color: #b75c12; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    padding-bottom: 30px;
+    position: relative; 
+}
+
+.header {
+    position: sticky; 
+    top: 0; 
+    z-index: 20; 
+    background-color: #b75c12; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 50px; 
+    margin-bottom: 40px;
+}
+
+.logo-box {
+    background-color: #D48C46; 
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 14px;
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+}
+
+.main-nav {
+    background-color: #D48C46; 
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 80%; 
+    display: flex;
+    justify-content: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    display: block;
+    text-transform: uppercase; 
+    white-space: nowrap; 
+}
+
+.main-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+
+.content-area {
+    padding: 0 20px; 
+}
+
+.section-title {
+    color: #ffffff; 
+    font-size: 44px; 
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 900; 
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.3); 
+    letter-spacing: 2px; 
+}
+
+.chord-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin-bottom: 50px;
+}
+
+.chord-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center; 
+    width: 100%;
+}
+
+.empty-spacer {
+    visibility: hidden;
+}
+
+.chord-name {
+    color: #ffffff; 
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.chord-card img {
+    width: 110px; 
+    height: auto;
+    background-color: #ECD8AE; 
+    border: 2px solid #5C3D2E; 
+    padding: 5px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.scale-column-row {
+
+    grid-template-columns: 1fr; 
+    gap: 40px; 
+}
+
+.scale-column-row .chord-card {
+    justify-self: stretch; 
+    align-items: center; 
+    
+    margin: 0 auto;
+    max-width: 500px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+}
+
+.scale-column-row .chord-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.scale-column-row .chord-card img {
+    width: 100%; 
+    max-width: 450px; 
+    height: auto;
+    padding: 10px;
+}
+
+.practice-section {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.practice-section h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+.practice-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.practice-section a {
+    color: #ffcc99; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.practice-section a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.section-intro {
+    color: #ffd8a1; 
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 800px; 
+    margin: 0 auto 50px auto;
+    line-height: 1.5;
+    padding: 0 10px;
+}
